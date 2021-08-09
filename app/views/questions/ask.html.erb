@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <%# <script charset="utf-8" src="js/app.js"></script>
+    <link rel="stylesheet" href="css/app.css" /> %>
+</head>
+<body>
+  <div class = "containerr">
+  <h1>Stupid Coaching</h1>
+  <p>Ask your coach anything:</p>
+  <form action="/answer" method="get">
+    <input type="text" name="answer" value= "<%= params[:answer] %>" id ="form1">
+    <input type="submit" value="Ask!" id="form2">
+  </form>
+  </div>
+</body>
+</html>
